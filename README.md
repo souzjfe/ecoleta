@@ -1,8 +1,8 @@
 ## Sumário de Checagem 
 
 - [ ] [Server](#sevidor-com-nodeJs-e-typescript)
-  - [ ] [Database](##banco-de-dados-com-[knex](http://knexjs.org/))
-  - [ ] [Rotas](#roteamento-com-[express](https://expressjs.com/pt-br/guide/routing.html))
+  - [ ] [Database](#banco-de-dados-com-knex)
+  - [ ] [Rotas](#roteamento-com-express)
 - [ ] [Web](#web)
 - [ ] Mobile
   - [ ] 

@@ -1,23 +1,23 @@
-## Sumário de Checagem 
+# Sumário de Checagem 
 
-- [ ] [Server](#sevidor-com-nodeJs-e-typescript)
-  - [ ] [Database](#banco-de-dados-com-knex)
-  - [ ] [Rotas](#roteamento-com-express)
-- [ ] [Web](#web-com-reactjs-e-typescript)
-- [ ] [Mobile](#mobile-com-react-native-e-typescript)
+- [x] [Server](#sevidor-com-nodeJs-e-typescript)
+  - [x] [Database](#banco-de-dados-com-knex)
+  - [x] [Rotas](#roteamento-com-express)
+- [x] [Web](#web-com-reactjs-e-typescript)
+- [x] [Mobile](#mobile-com-react-native-e-typescript)
 
 
 
-## Node (global)
+# Node (global)
 
 ~~~shell
 cd
 sudo apt install nodejs
 ~~~
 
-## Sevidor com [NodeJs](https://nodejs.org/en/docs/) e [Typescript](https://www.typescriptlang.org/)
+# Sevidor com [NodeJs](https://nodejs.org/en/docs/) e [Typescript](https://www.typescriptlang.org/)
 
-#### Instalacão e Estruturação
+### Instalacão e Estruturação
 
 ~~~shell
 mkdir server
@@ -38,7 +38,7 @@ npx ts-node-dev src/server.ts
 
 dentro de package.json em scripts pode ser add os comando de execucao do shell
 
-### Banco de dados com [Knex](http://knexjs.org/)
+## Banco de dados com [Knex](http://knexjs.org/)
 
 #### Instalacão e Estruturação
 
@@ -123,27 +123,26 @@ mkdir controllers
 cd ../..
 ~~~
 
-
-
-
-
-
-
-
-
-
-
-## Executar pacote
+### Executar pacote
 
 ~~~shell
 npx ts-node src/server.ts
 ~~~
 
-## Web com [ReactJs](https://pt-br.reactjs.org/) e [Typescript](https://www.typescriptlang.org/)
+# Web com [ReactJs](https://pt-br.reactjs.org/) e [Typescript](https://www.typescriptlang.org/)
 
 ~~~shell
 cd origem
 npx create-react-app web --template=typescript
+cd web
+rm -rf favicon.icon logo192.png logo512.png manifest.json robots.txt
+cd ..
+rm -rf README.md
+cd src
+rm -rf logo.svg serviceWorker.ts setupTests.ts App.test.tsx index.css
+touch routes.tsx
+mkdir pages services
+cd ../..
 ~~~
 
 ### Executar web
@@ -153,20 +152,7 @@ npm start
 ~~~
 
 
-
-# Estutura de Diretórios
-
-## 	Server
-
-		### 		src
-
-### 		server.ts
-
-- [ ] 
-
-### routes.ts
-
-## Mobile com [React-Native](https://reactnative.dev/) e [Typescript](https://www.typescriptlang.org/)
+# Mobile com [React-Native](https://reactnative.dev/) e [Typescript](https://www.typescriptlang.org/)
 
 
 

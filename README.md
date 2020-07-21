@@ -3,9 +3,8 @@
 - [ ] [Server](#sevidor-com-nodeJs-e-typescript)
   - [ ] [Database](#banco-de-dados-com-knex)
   - [ ] [Rotas](#roteamento-com-express)
-- [ ] [Web](#web)
-- [ ] Mobile
-  - [ ] 
+- [ ] [Web](#web-com-reactjs-e-typescript)
+- [ ] [Mobile](#mobile-com-react-native-e-typescript)
 
 
 
@@ -18,17 +17,16 @@ sudo apt install nodejs
 
 ## Sevidor com [NodeJs](https://nodejs.org/en/docs/) e [Typescript](https://www.typescriptlang.org/)
 
+#### Instalacão e Estruturação
+
 ~~~shell
 mkdir server
 cd server
 npm init -y
-npm i express
-npm i typescript -D
-npm i @types/express -D
+npm i express ts-node
+npm i typescript ts-node-dev @types/express -D
 npx tsc --init
-npm i ts-node
-npm i ts-node-dev -D
-mkdir src 
+mkdir src uploads
 cd ..
 ~~~
 
@@ -47,6 +45,7 @@ dentro de package.json em scripts pode ser add os comando de execucao do shell
 ~~~shell
 cd server
 npm i knex
+touch knexfile.ts
 cd src
 mkdir database
 cd database
@@ -72,7 +71,26 @@ const connection = knex ({
 export default connection;
 ~~~
 
+#### knexfile.ts
 
+```typescript
+import path from 'path';
+
+
+module.exports = {
+    client: 'sqlite3',
+    connection: {
+        filename: path.resolve(__dirname, 'src', 'database', 'database.sqlite'),
+    },
+    migrations: {
+        directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
+    },
+    seeds: {
+        directory: path.resolve(__dirname, 'src', 'database', 'seeds')
+    },
+    useNullAsDefault: true
+}; 
+```
 
 #### Migrate
 
@@ -100,8 +118,9 @@ Dentro da pasta **seeds** será incluido os arquivos para criação de dados ini
 cd server
 npm i express
 touch routes.ts
+cd src
 mkdir controllers
-cd ..
+cd ../..
 ~~~
 
 
@@ -120,14 +139,14 @@ cd ..
 npx ts-node src/server.ts
 ~~~
 
-## Web
+## Web com [ReactJs](https://pt-br.reactjs.org/) e [Typescript](https://www.typescriptlang.org/)
 
 ~~~shell
 cd origem
-npx create-react-app name --template=typescript
+npx create-react-app web --template=typescript
 ~~~
 
-executar
+### Executar web
 
 ~~~ shell
 npm start
@@ -147,15 +166,7 @@ npm start
 
 ### routes.ts
 
-
-
-
-
-
-
-## Web
-
-## Mobile
+## Mobile com [React-Native](https://reactnative.dev/) e [Typescript](https://www.typescriptlang.org/)
 
 
 

@@ -1,7 +1,7 @@
 ## Sumário de Checagem 
 
 - [ ] [Server](#sevidor-com-nodeJs-e-typescript)
-  - [ ] [Database](#banco-de-dados-com-[knex](http://knexjs.org/))
+  - [ ] [Database](##banco-de-dados-com-[knex](http://knexjs.org/))
   - [ ] [Rotas](#roteamento-com-[express](https://expressjs.com/pt-br/guide/routing.html))
 - [ ] [Web](#web)
 - [ ] Mobile
@@ -35,7 +35,6 @@ cd ..
 ### Execução do server
 
 ~~~shell
-
 npx ts-node-dev src/server.ts
 ~~~
 

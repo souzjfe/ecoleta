@@ -1,6 +1,6 @@
 ## Sumário de Checagem 
 
-- [ ] [Server](#Sevidor com NodeJs e Typescript)
+- [ ] [Server](#sevidor-com-nodeJs-e-typescript)
   - [ ] [Database](#Banco de dados com [Knex](http://knexjs.org/))
   - [ ] [Rotas](#Roteamento com [Express](https://expressjs.com/pt-br/guide/routing.html))
 - [ ] [Web](#web)
@@ -31,7 +31,7 @@ mkdir src
 cd ..
 ~~~
 
-### Execução auto do server
+### Execução do server
 
 ~~~shell
 npm i ts-node-dev -D

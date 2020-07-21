@@ -49,6 +49,7 @@ export default class PointsController {
             latitude,
             items
         } = request.body;
+        console.log(request.body);
 
         //const trx =await knex.transaction();
         const point = {

@@ -23,18 +23,4 @@ app.use(routes);
 // Query param: params que vem na propro rota geranlmente opcionasi para filtros paginacao
 // Request body : parms para criar e atualizar user
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(3333);

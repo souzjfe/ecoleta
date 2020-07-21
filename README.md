@@ -1,8 +1,8 @@
 ## Sumário de Checagem 
 
 - [ ] [Server](#sevidor-com-nodeJs-e-typescript)
-  - [ ] [Database](#Banco de dados com [Knex](http://knexjs.org/))
-  - [ ] [Rotas](#Roteamento com [Express](https://expressjs.com/pt-br/guide/routing.html))
+  - [ ] [Database](#banco-de-dados-com-[knex](http://knexjs.org/))
+  - [ ] [Rotas](#roteamento-com-[express](https://expressjs.com/pt-br/guide/routing.html))
 - [ ] [Web](#web)
 - [ ] Mobile
   - [ ] 
@@ -27,6 +27,7 @@ npm i typescript -D
 npm i @types/express -D
 npx tsc --init
 npm i ts-node
+npm i ts-node-dev -D
 mkdir src 
 cd ..
 ~~~
@@ -34,7 +35,7 @@ cd ..
 ### Execução do server
 
 ~~~shell
-npm i ts-node-dev -D
+
 npx ts-node-dev src/server.ts
 ~~~
 
@@ -111,12 +112,6 @@ cd ..
 
 
 
-
-## ts-Node	
-
-~~~shell
-npm install ts-node -D
-~~~
 
 
 
